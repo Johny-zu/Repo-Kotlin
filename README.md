@@ -10,3 +10,6 @@ https://kotlinlang.org/docs/home.html
 
 #### Capacitación de Kotlin para programadores
 https://developer.android.com/courses/kotlin-bootcamp/overview?hl=es-419
+
+### Aspectos basicos de android 
+https://developer.android.com/courses/basic-android-kotlin-training/overview?hl=es-419
