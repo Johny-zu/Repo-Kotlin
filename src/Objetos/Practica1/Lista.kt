@@ -1,7 +1,10 @@
 package Objetos.Practica1
 
 fun main() {
-    val menu = "1.- Ingresa personas \n2.- Lista de personas \n5.- Salida"
+    val menu = "1.- Ingresa personas " +
+            "\n2.- Lista de personas " +
+            "\n3.- " +
+            "\n5.- Salida"
     var opcion : Int
     var listaPersonas = mutableListOf<Persona>()
 
@@ -36,7 +39,12 @@ fun main() {
                         println(Persona.toString())
                 }
             }
+            3 -> {
+                println("Ingresa el numero de la persona que se va: ")
+                var index = readLine()!!.toInt()
+            }
+
+            else -> "Error"
         }
     } while (opcion != 5)
-
 }

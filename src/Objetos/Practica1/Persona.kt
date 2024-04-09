@@ -13,19 +13,19 @@ class Persona {
         this.sexo = sexo
     }
 
-    fun genero(){
-        when(sexo){
-            'm' -> println("Masculino")
-            'f' -> println("Feminino")
-            else -> println("Error")
+    fun genero(): String {
+        return when (sexo) {
+            'm' -> "Masculino"
+            'f' -> "Femenino"
+            else -> "Error"
         }
     }
 
     override fun toString(): String {
-        var s : String = ""
-        s += "El nombre completo es: $nombre $apellido"
-        s += "Tiene: $edad de edad"
-        s += "sexo: ${genero()}"
+        var s: String = ""
+        s += "El nombre completo es: $nombre $apellido\n"
+        s += "Tiene: $edad de edad\n"
+        s += "Es: ${genero()}\n" // Llamada a la función genero() sin concatenación
         return s
     }
 }
